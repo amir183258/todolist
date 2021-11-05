@@ -30,6 +30,12 @@ function newElement()
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
+    // php part
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("POST", "http://localhost/test2/php/writework.php", true);
+    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.send("text=" + inputValue);
+    // js part
     li.appendChild(t);
     if(inputValue === "")
         alert("You must write something!");

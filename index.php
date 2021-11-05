@@ -20,10 +20,8 @@
         </div>
         <div id="list-container">
             <ul id="myUL">
-                <li>Hit the gym</li>
-                <li class="checked">Pay bills</li>
-                <li>Meet Aria</li>
-                <li>Read a book</li>
+                <!-- php here for reading from file -->
+                <?php include 'php/readworks.php';?>
             </ul>
         </div>
     </div>

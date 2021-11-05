@@ -9,12 +9,14 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right, #8a2387, #e94057, #F27121);
 }
 
 #todo-container {
     width: 700px;
     height: 600px;
     border: solid 1px #606060;
+    background-color: #aaa;
 }
 
 #list-container {
